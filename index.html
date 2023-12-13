@@ -176,8 +176,7 @@
       </div>
     </div>
   <figure class="image" id="fig-method">
-  <img src="static/images/model_architecture.png" class="image-spacing, center" style="width: 400px">
-  <br>
+  <img src="static/images/model_architecture.png" class="image-spacing, center" style="width: 500px">
   <br>
   <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
@@ -193,21 +192,46 @@
   <div class="container is-max-desktop">
     <!-- A -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-full-width">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">About</h2>
         <div class="content has-text-justified">
         </div>
-        <figure class="image" id="fig-method">
-	 <img src="static/images/brain-connectivity-measures.png" class="center" style="width: 750px">
           <div class="content has-text-justified">
           <p>
-            <br>
-	    <br>
-		Schizophrenia (SCZ) is a serious mental condition that causes hallucinations, delusions, and disordered thinking. 
+      Schizophrenia is a serious mental condition that causes hallucinations, delusions, and disordered thinking. 
+      Traditionally, Schizophrenia diagnosis involves the subject’s interview by a skilled psychiatrist. This process 
+      needs time and is bound to human errors and bias. The goal of this project was to develop a faster computational 
+      alternative of Schizophrenia diagnosis in patients thereby mitigating the inductive bias due to human diagnosis. 
+      <br>
+      <br>
+      We developed Schizo-Net: a novel, highly accurate, and reliable Schizophrenia diagnosis model based on a late 
+      multimodal fusion of estimated brain connectivity indices from EEG activity. Schizo-Net is based on the fact 
+      that brain connectivity indices can be used to discriminate neuro-psychiatric patients from healthy subjects. 
+      First, the raw EEG activity is pre-processed exhaustively to remove unwanted artifacts. Next, six brain 
+      connectivity indices are estimated from the windowed EEG activity, and six different deep learning architectures,
+      with varying neurons and hidden layers were trained. Here, the goal was to select the best neural network 
+      architecture that could help increase the precision of Schizophrenia diagnosis. 
+      <br>
+      <br>
+      Our results found that Schizo-Net surpasses current state-of-the-art Schizophrenia diagnosis models and 
+      achieves 99.84% accuracy. Experiments performed on varying neural network architectures also established 
+      that Late fusion technique outperforms single architecture-based prediction in diagnosing Schizophrenia. 
+      These results underscore the potential of Schizo-Net as a valuable tool in the precise diagnosis of Schizophrenia. 
+      <br>
+      <br>
+      In conclusion, using Schizo-Net, psychiatrists can massively reduce the time, human bias and errors that often accompany 
+      Schizophrenia diagnosis. Schizo-Net’s ability to diagnose Schizophrenia precisely, positions it as a versatile and 
+      enduring tool. Next steps for the project involve deploying the Schizo-Net for a clinical trial and testing its 
+      performance over a wide survey sample of patients diagnosed with Schizophrenia.
             <br>
             <br>
           </p>          
-	</div></figure>
+      <figure class="image" id="fig-method">
+	 <img src="static/images/brain-connectivity-measures.png" class="center" style="width: 750px">
+         <h2 class="title is-size-6">Group differences as graphs for different connectivity measures including PLV, PLI, DTF, PDC, SL and COR. 
+		 Here rows represent (a) Healthy patient and (b) SCZ Patient. Directions of information flow are indicated using arrows.</h2>
+      </div>
+      </figure>
       </div>
     </div>
   </div>
