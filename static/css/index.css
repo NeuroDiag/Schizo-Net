@@ -1,5 +1,5 @@
 body {
-  font-family: "Palatino Linotype";
+  font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -36,7 +36,7 @@ body {
 }
 
 .teaser {
-  font-family: "Palatino Linotype";
+  font-family: 'Google Sans', sans-serif;
 }
 
 
@@ -66,11 +66,11 @@ body {
 }
 
 .publication-title {
-    font-family: "Palatino Linotype";
+    font-family: 'Google Sans', sans-serif;
 }
 
 .publication-authors {
-    font-family: "Palatino Linotype";
+    font-family: 'Google Sans', sans-serif;
 }
 
 .publication-venue {
